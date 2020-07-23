@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Image_Modifier</title>
+        <link href="reset.css" rel="stylesheet" type="text/css">
+        <link href="style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <h2>Image.Modifier.<span class="hl">JS</span></h2>
+
+        <div class="controls">
+            <label for="spacing">Border:</label>
+            <input id="spacing" type="range" name="spacing" min="1" max="200" value="1" data-sizing="px">
+
+            <label for="blur">Blur:</label>
+            <input id="blur" type="range" name="blur" min="0" max="25" value="0" data-sizing="px">
+
+            <label for="base">Border Color:</label>
+            <input id="base" type="color" name="base" value="#ffc600">
+
+            <label for="borderRadius">Border Radius:</label>
+            <input id="border" type="range" name="border" min="0" max="250" value="10" data-sizing="px">
+
+            <label for="boxshadow_right">Box Shadow [Right]:</label>
+            <input id="boxshadow_right" type="range" name="boxshadow_right" min="0" max="250" value="10" data-sizing="px">
+
+            <label for="boxshadow_down">Box Shadow [Down]:</label>
+            <input id="boxshadow_down" type="range" name="boxshadow_down" min="0" max="250" value="10" data-sizing="px">
+
+            <label for="boxshadow_fade">Box Shadow [Fade]:</label>
+            <input id="boxshadow_fade" type="range" name="boxshadow_fade" min="0" max="250" value="10" data-sizing="px">
+
+            <label for="boxshadow_color">Box Shadow [Color]:</label>
+            <input id="boxshadow_color" type="color" name="boxshadow_color" value="black">
+
+            <label for="sepia">Sepia:</label>
+            <input id="sepia" type="range" name="sepia" min="0" max="1" value=".1" step="0.001">
+
+            <label for="saturate">Saturation:</label>
+            <input id="saturate" type="range" name="saturate" min="1" max="2" value=".01" step="0.001">
+
+            <label for="contrast">Contrast:</label>
+            <input id="contrast" type="range" name="contrast" min="1" max="2" value=".01" step="0.001">
+
+            <label for="brightness">Brightness:</label>
+            <input id="brightness" type="range" name="brightness" min="1" max="2" value="0.001" step="0.001">
+
+        </div>
+
+        <img src="lake.jpg">
+
+        <script src="script.js" type="text/JavaScript"></script>
+    </body>
+    <foot>
+        <h3>Created by: Harry Zhou</h3>
+    </foot>
+</html>

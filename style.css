@@ -1,0 +1,68 @@
+:root {
+    --base: #ffc600;
+    --spacing: 1px;
+    --blur: 0px;
+    --border: 0px;
+    --boxshadow_right: 0px;
+    --boxshadow_down: 0px;
+    --boxshadow_fade: 0px;
+    --boxshadow_color: black;
+    --sepia: 0;
+    --saturate: 1;
+    --contrast: 1;
+    --brightness: 1;
+} /*This root is the highest level...similar to html. Define adjustable variables here. Notice that variables in CSS is determined via '--', and in SASS it's '$' */
+
+img {
+    padding: var(--spacing);
+    background: var(--base);
+    border-radius: var(--border);
+    filter: blur(var(--blur)) drop-shadow(var(--boxshadow_right) var(--boxshadow_down) var(--boxshadow_fade) var(--boxshadow_color)) sepia(var(--sepia)) saturate(var(--saturate)) contrast(var(--contrast)) brightness(var(--brightness));
+}
+
+
+
+h2 {
+    margin-top: 25px;
+    color: rgb(191, 95, 102);
+    text-shadow: 5px 1px px white;
+}
+
+.hl {
+    color: var(--base);
+    text-shadow: 5px 5px 4px var(--boxshadow_color);
+}
+
+body {
+    text-align: center;
+    background: rgb(194, 214, 215);
+    color: white;
+    font-family: 'helvetica neue', sans-serif;
+    font-weight: 100;
+    font-size: 50px;
+}
+
+.controls {
+    display: grid;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    grid-template-columns: repeat(4, auto) ;
+    gap: 12px;
+    justify-content: center;
+
+}
+
+label {
+    font-size: 25px;
+    color: rgb(111, 121, 160);
+}
+
+input {
+    width: 100px;
+}
+
+h3 {
+    color: plum;
+    margin-top: 50px;
+    font-size: 20px;
+}
